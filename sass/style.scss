@@ -1,0 +1,38 @@
+@import "libs/h5bp";
+@import "_mixins";
+@import "_typography";
+@import "_grid";
+
+// Base 
+
+body {
+	font-family: sans-serif;
+}
+
+// Layout
+
+.container {
+	padding-right: 1em;
+	padding-left: 1em;
+}
+
+// Presentation styles
+
+.demo-col {
+	margin-top: 0.618em;
+	display: block;
+	padding: 0.618em 0;
+	border-radius: 3px;
+	background-color: #ccc;
+	text-align: center;
+}
+
+// Grid System
+
+.grid-notes {
+	@include cols(4);
+}
+
+.grid-snippet {
+	@include cols(8, 0);
+}
