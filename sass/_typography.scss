@@ -1,62 +1,164 @@
 // Typography
 
+// Modular Scale 
+// http://modularscale.com/scale/?px1=16&px2=18&ra1=1.618&ra2=0
+
 @import "_settings";
 
 body {
-  font-size: $base-font-size;
-  line-height: $base-line-height;;
+	color: $text-color;
+	font-size: $base-font-size;
+	font-family: $base-font-family;
+	line-height: $base-line-height;
 }
 
-h1 {
-  font-size: $h1-font-size;
-  line-height: $h1-line-height;
-  margin-top: $h1-margin-top;
-  margin-bottom: $h1-margin-bottom;
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: $headings-margin-bottom;
+	line-height: $headings-line-height;
 }
 
-h2 {
-  font-size: $h2-font-size;
-  line-height: $h2-line-height;
-  margin-top: $h2-margin-top;
-  margin-bottom: $h2-margin-bottom;
+h1 { font-size: 2.618em; }
+h2 { font-size: 1.82em; }
+h3 { font-size: 1.618em; }
+h4 { font-size: 1.125em; }
+h5 { font-size: 1em; }
+
+h6 { 
+	text-transform: uppercase; 
+	font-size: 0.695em;
 }
 
-h3 {
-  font-size: $h3-font-size;
-  line-height: $h3-line-height;
-  margin-top: $h3-margin-top;
-  margin-bottom: $h3-margin-bottom;
+p, ul, ol, dl, blockquote {
+	margin-bottom: $base-margin-bottom; 
+	font-size: 1em;
+	line-height: $base-margin-bottom;
+}
+					    
+ul { margin-left: 0.695em; 
+	list-style-type: disc; 
 }
 
-h4 {
-  font-size: $h4-font-size;
-  line-height: $h4-line-height;
-  margin-top: $h4-margin-top;
-  margin-bottom: $h4-margin-bottom;
+ol { margin-left: 0.695em; 
+	list-style-type: decimal; 
 }
 
-p, ul, ol, pre, table, blockquote {
-  margin-top: 29px;
-  margin-bottom: 29px;
+ol ul,
+ul ol,
+ol ol,
+ul ul {		
+	margin-bottom: 0;
 }
 
-/* Sanitation */
-
-ul ul, ol ol, ul ol, ol ul {
-  margin-top: 0;
-  margin-bottom: 0;
+nav ul, nav ol { 
+	margin: 0; padding: 0; 
+	list-style: none;
 }
 
-b, strong, em, small, code {
-  line-height: 1;
+b, strong { 
+	font-weight: bold; 
 }
 
-sup, sub {
-  vertical-align: baseline;
-  position: relative;
-  top: -0.4em;
+i, em { 
+	font-style: italic; 
 }
 
-sub {
-  top: 0.4em;
+small { 
+	font-size: 80%; 
 }
+
+a, a:visited { 
+	outline: none; 
+	color: $link-color; 
+	text-decoration: none; 
+	border-bottom: 1px dotted $link-color;
+}
+
+a:hover { 
+	outline: none; 
+	text-decoration:none; 
+}
+
+a:active, a:focus { 
+	outline: none; 
+}
+
+pre {
+	white-space: pre-wrap;
+}
+
+code {
+	color: $code-text-color;
+	font-family: $code-font-family;
+}
+
+blockquote {
+	margin-left: 0;
+	padding-left: 1.618em;
+	border-left: 5px solid lighten($text-color, 70%);
+	color: lighten($text-color, 20%);
+}
+
+hr {
+	display: block;
+	clear: both;
+	margin: 1em 0 2em; /* 0 0 32px */
+	padding: 0;
+	height: 0;
+	border: 0;
+	text-align: center;
+	font-weight: 700;
+	font-size: 2em; /* 32px */
+	line-height: 1; /* 32px */
+}
+
+hr::after {
+	padding-left: 1em;
+	height: 0;
+	color: #bbb;
+	content: "···";
+	letter-spacing: 1em;
+}
+
+figure {
+	figcaption {
+		margin-top: 0.382em;
+	}
+
+	p {
+		margin-bottom: 0;
+	}
+}
+
+figcaption {
+	font-size: 0.695em;
+	color: lighten($text-color, 30%); 
+}
+
+table {
+	margin: 0;
+	padding: 0;
+}
+
+table th,
+table td {
+	padding: 10px 20px;
+	text-align: left;
+	border-bottom: 1px solid #ccc;
+}
+
+table th {
+	border-width: 2px;
+}
+
+table td {
+	color: #666;
+}
+
+table tr:last-child th,
+table tr:last-child td {
+	border-bottom: none;
+}
+
+table tr:nth-child(even) {
+	background: #eee;
+}				

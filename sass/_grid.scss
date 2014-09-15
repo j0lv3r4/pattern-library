@@ -35,3 +35,8 @@ $gutter: 1%;
 #sidebar {
 	@include cols(4, 0);
 }
+
+img {
+	max-width: 100%;
+	height: auto;
+}

@@ -3,21 +3,19 @@
 @import "_typography";
 @import "_grid";
 
-// Base 
-
+// Base
 body {
-	font-family: sans-serif;
+	overflow-y: scroll;
 }
 
 // Layout
-
 .container {
+	width: $site-width;
 	padding-right: 1em;
 	padding-left: 1em;
 }
 
 // Presentation styles
-
 .demo-col {
 	margin-top: 0.618em;
 	display: block;
@@ -28,7 +26,6 @@ body {
 }
 
 // Grid System
-
 .grid-notes {
 	@include cols(4);
 }
