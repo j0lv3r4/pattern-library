@@ -219,55 +219,35 @@ table tr:nth-child(even) {
   width: 100%; }
 
 .col-1-2 {
-  width: 100%;
-  float: none; }
-  @media handheld, only screen and (min-width: 768px) {
-    .col-1-2 {
-      float: left;
-      width: 49.5%;
-      margin-right: 1%; }
-      .col-1-2:last-child {
-        margin-right: 0; } }
+  float: left;
+  width: 49.5%;
+  margin-right: 1%; }
+  .col-1-2:last-child {
+    margin-right: 0; }
 
 .col-1-3 {
-  width: 100%;
-  float: none; }
-  @media handheld, only screen and (min-width: 768px) {
-    .col-1-3 {
-      float: left;
-      width: 32.66667%;
-      margin-right: 1%; }
-      .col-1-3:last-child {
-        margin-right: 0; } }
+  float: left;
+  width: 32.66667%;
+  margin-right: 1%; }
+  .col-1-3:last-child {
+    margin-right: 0; }
 
 .col-1-4 {
-  width: 100%;
-  float: none; }
-  @media handheld, only screen and (min-width: 768px) {
-    .col-1-4 {
-      float: left;
-      width: 24.25%;
-      margin-right: 1%; }
-      .col-1-4:last-child {
-        margin-right: 0; } }
+  float: left;
+  width: 24.25%;
+  margin-right: 1%; }
+  .col-1-4:last-child {
+    margin-right: 0; }
 
 #main {
-  width: 100%;
-  float: none; }
-  @media handheld, only screen and (min-width: 768px) {
-    #main {
-      float: left;
-      width: 66.33333%;
-      margin-right: 1%; } }
+  float: left;
+  width: 66.33333%;
+  margin-right: 1%; }
 
 #sidebar {
-  width: 100%;
-  float: none; }
-  @media handheld, only screen and (min-width: 768px) {
-    #sidebar {
-      float: left;
-      width: 32.66667%;
-      margin-right: 0; } }
+  float: left;
+  width: 32.66667%;
+  margin-right: 0; }
 
 img {
   max-width: 100%;
@@ -336,6 +316,9 @@ a.btn-large {
   font-size: 1.618em;
   font-weight: bold; }
 
+form .field-group {
+  margin-bottom: 1em; }
+
 body {
   overflow-y: scroll; }
 
@@ -353,27 +336,11 @@ body {
   text-align: center; }
 
 .grid-notes {
-  width: 100%;
-  float: none; }
-  @media handheld, only screen and (min-width: 768px) {
-    .grid-notes {
-      float: left;
-      width: 31.33333%;
-      margin-right: 3%; } }
+  float: left;
+  width: 31.33333%;
+  margin-right: 3%; }
 
 .grid-snippet {
-<<<<<<< HEAD
   float: left;
-  width: 66.33333%;
+  width: 65.66667%;
   margin-right: 0; }
-
-/*# sourceMappingURL=style.css.map */
-=======
-  width: 100%;
-  float: none; }
-  @media handheld, only screen and (min-width: 768px) {
-    .grid-snippet {
-      float: left;
-      width: 65.66667%;
-      margin-right: 0; } }
->>>>>>> e925fea1d7417822d6192c48449a2804b6146e17
