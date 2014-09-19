@@ -28,6 +28,7 @@
     "normalize.css": "~3.0.1"
   },
   "devDependencies": {
-    "hyx.scss": "~1.0.1"
+    "hyx.scss": "~1.0.1",
+    "fontawesome": "~4.2.0"
   }
 }

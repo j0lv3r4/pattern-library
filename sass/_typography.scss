@@ -99,6 +99,9 @@ blockquote {
 }
 
 hr {
+}
+
+hr.fancy {
 	display: block;
 	clear: both;
 	margin: 1em 0 2em; /* 0 0 32px */
@@ -111,7 +114,7 @@ hr {
 	line-height: 1; /* 32px */
 }
 
-hr::after {
+hr.fancy::after {
 	padding-left: 1em;
 	height: 0;
 	color: #bbb;

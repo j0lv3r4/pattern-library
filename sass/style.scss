@@ -1,9 +1,12 @@
-@import "libs/h5bp";
+@import "vendors/h5bp";
 @import "_mixins";
 @import "_typography";
 @import "_grid";
 @import "_buttons";
 @import "_forms";
+@import "_icons";
+@import "_feedback";
+@include box-sizing();
 
 // Base
 body {
@@ -34,4 +37,20 @@ body {
 
 .grid-snippet {
 	@include cols(8, 0);
+}
+
+// Masthead
+.masthead {
+	margin-bottom: 4em;
+	padding: 2em 0;
+	background-color: #333;
+	color: #fff;
+}
+
+.site-title {
+	margin-top: 0;
+}
+
+.site-description {
+	margin-bottom: 0;
 }

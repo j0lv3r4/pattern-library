@@ -1,13 +1,14 @@
 // General
 $site-width: 65em;
 
-// Grid variables
+// Grid Variables.
 $column-count: 12;
 $gutter: 3%;
 
-// Typography variables
+// Typography Variables.
 $text-color: #333;
 $link-color: #0f82bd;
+$muted-text-color: lighten($text-color, 15%);
 
 $base-font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
 $base-font-size: 1em;
@@ -21,7 +22,7 @@ $headings-line-height: 1.125em;
 $code-font-family: 'DejaVu Sans Mono', Inconsolata, Consolas, 'Lucida Console', monospace;
 $code-text-color: brown;
 
-// Button variables
+// Button Variables.
 $btn-roundness: 3.778px;
 
 $btn-small-font-size: 0.75em;
@@ -32,3 +33,18 @@ $btn-default-text-color: #333;
 
 $btn-primary-bg: #0f82bd;
 $btn-primary-text-color: lighten(#0f82bd, 50%);
+
+// Form Variables.
+$field-border-color: #ccc;
+$field-error-color: brown;
+$field-required-color: brown;
+
+// Icon Variables.
+$icon-roundness: 3px;
+$icon-border-color: #333;
+
+// Feedback Variables.
+$information-color: #439ccf;
+$error-color: #e72915;
+$warning-color: #d35400;
+$success-color: #74a730;
