@@ -40,7 +40,7 @@ module.exports = function(grunt) {
           files: ['Gruntfile.js']          
         },
         sass: {
-          files: '<%= config.dev %>/sass/*.scss',
+          files: '<%= config.dev %>/sass/{,*/}*.scss',
           tasks: ['sass', 'autoprefixer']
         },
         livereload: {
