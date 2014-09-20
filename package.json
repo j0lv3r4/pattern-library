@@ -1,11 +1,11 @@
 {
-  "name": "html5-starter-boilerplate",
+  "name": "pattern-library",
   "version": "0.1.0",
-  "description": "html5 Starter Boilerplate",
+  "description": "pattern library for personal projects",
   "license": "MIT",
-  "repository": "thinkxl/html5-starter",
+  "repository": "thinkxl/pattern-library",
   "author": "Juan Olvera",
-  "main": "js/main.js",
+  "main": "index.html",
   "keywords": [
     "html5",
     "web",

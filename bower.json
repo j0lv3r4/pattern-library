@@ -1,17 +1,17 @@
 {
-  "name": "html5-starter",
+  "name": "pattern-library",
   "version": "0.1.0",
   "authors": [
     "Juan Olvera <thinkxl@gmail.com>"
   ],
-  "description": "html5 starter boilerplate",
+  "description": "pattern library for personal projects",
   "moduleType": [
     "globals"
   ],
   "keywords": [
     "html5",
     "boilerplate",
-    "less",
+    "sass",
     "grunt"
   ],
   "license": "MIT",

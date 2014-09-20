@@ -1,1 +1,3 @@
-- [ ] Add newer task in Gruntfile.js
+- [ ] Add tabs
+- [ ] Add slider
+- [ ] Add horizontal and vertical navigation
