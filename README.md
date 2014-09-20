@@ -1,6 +1,6 @@
 # Pattern library 
 
-*Basic `HTML` and `CSS`* for personal projects.
+*Basic HTML and CSS for personal projects.*
 
 ## How to install
 
