@@ -1,10 +1,10 @@
-@import "_settings";
+@import "../helpers/_settings";
 
 button,
 .btn,
 a.btn {
 	display: inline-block;
-	padding: 0.75em 1.5em;
+	padding: 0.618em 1.5em;
 	border: 0;
 	border-radius: $btn-roundness;
 	background-color: $btn-default-bg;

@@ -25,14 +25,14 @@ $code-text-color: brown;
 // Button Variables.
 $btn-roundness: 3.778px;
 
-$btn-small-font-size: 0.75em;
+$btn-small-font-size: 0.618em;
 $btn-large-font-size: 1.618em;
 
-$btn-default-bg: #dde2d4;
+$btn-default-bg: #eee;
 $btn-default-text-color: #333;
 
-$btn-primary-bg: #0f82bd;
-$btn-primary-text-color: lighten(#0f82bd, 50%);
+$btn-primary-bg: #0078E7;
+$btn-primary-text-color: lighten($btn-primary-bg, 50%);
 
 // Form Variables.
 $field-border-color: #ccc;
