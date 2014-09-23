@@ -108,7 +108,7 @@ module.exports = function(grunt) {
             expand: true,
             cwd: '<%= config.dev %>/img',
             src: '*.{png,jpg,jpeg}',
-            dest: '<%= config.prod %>/prod/img'
+            dest: '<%= config.prod %>/img'
           }]
         }
       },
@@ -155,7 +155,7 @@ module.exports = function(grunt) {
       rsync: {
         options: {
           args: ["--verbose"],
-          exclude: ["less", "*~", "*.swp", ".*", "node_modules", "prod", "bower_components", "Gruntfile.js", "package.json", "bower.json"],
+          exclude: ["sass", "*~", "*.swp", ".*", "*.md", "node_modules", "prod", "bower_components", "Gruntfile.js", "package.json", "bower.json"],
           recursive: true
         },
         dist: {

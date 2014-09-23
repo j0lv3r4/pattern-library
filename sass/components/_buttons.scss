@@ -1,39 +1,32 @@
 @import "../helpers/_settings";
+@import "../helpers/_mixins";
 
-button,
-.btn,
-a.btn {
+.button-static {
 	display: inline-block;
 	padding: 0.618em 1.5em;
 	border: 0;
 	border-radius: $btn-roundness;
-	background-color: $btn-default-bg;
-	color: $btn-default-text-color;
 	text-decoration: none;
 	font-family: inherit;
 	font-family: inherit;
 	line-height: 1;
 	cursor: pointer;
 
-	&:hover {
-		background-color: $text-color;
-		color: #fff;
-	}
-
-	&:active {
-		background-color: lighten($text-color, 10%);
-	}
-
 	&:focus {
 		outline: none;	
 	}
 }
 
+button,
+.btn,
+a.btn {
+	@extend .button-static;
+	@include button(#3498db, #fff);
+}
+
+
 .btn-primary {
 	@extend .btn;
-
-	background-color: $btn-primary-bg;
-	color: $btn-primary-text-color;
 }
 
 .btn-small {
