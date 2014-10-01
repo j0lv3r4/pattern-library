@@ -1,10 +1,49 @@
+// settings
+@import "variables";
+@import "base/functions";
+@import "base/box-sizing";
 @import "vendors/h5bp";
-@import "helpers/_mixins";
-@import "base/_typography";
-@import "layout/_grid";
-@import "layout/_forms";
-@import "components/_buttons";
-@import "components/_icons";
-@import "components/_feedback";
-@import "themes/_theme.scss";
-@include box-sizing();
+
+/*
+ * Base 
+ */
+
+@import "base/normalize";
+
+@import "base/typography";
+
+@import "base/forms";
+
+@import "base/images";
+
+/*
+ * Layout 
+ */
+
+@import "layout/header";
+
+@import "layout/container";
+
+@import "layout/footer";
+
+@import "layout/grid";
+
+@import "layout/sidebar";
+
+/*
+ * UI 
+ */
+
+@import "UI/navigation";
+
+@import "UI/buttons";
+
+@import "UI/icons";
+
+@import "UI/feedback";
+
+/*
+ * Example page
+ */
+
+@import "pages/example";

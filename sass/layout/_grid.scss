@@ -1,16 +1,7 @@
-@import "../helpers/_settings";
+@import "../variables";
 @import "../../bower_components/hyx.scss/hyx";
 
-// Hyx setup 
-
 $gutter: 1%;
-
-// Main Container
-
-.container {
-	margin: 0 auto;
-	max-width: $site-width;
-}
 
 .col-1-1 {
 	width: 100%;

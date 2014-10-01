@@ -1,9 +1,12 @@
-// Typography
-
 // Modular Scale 
 // http://modularscale.com/scale/?px1=16&px2=18&ra1=1.618&ra2=0
 
-@import "../helpers/_settings";
+@import "../variables";
+
+html {
+	font-size: 16px;
+	overflow-y: scroll;
+}
 
 body {
 	color: $text-color;
@@ -13,34 +16,34 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-	margin-bottom: $headings-margin-bottom;
+	margin-bottom: $base-margin-bottom;
 	line-height: $headings-line-height;
 }
 
-h1 { font-size: 2.618em; }
-h2 { font-size: 1.82em; }
-h3 { font-size: 1.618em; }
-h4 { font-size: 1.125em; }
-h5 { font-size: 1em; }
+h1 { font-size: 2.618rem; }
+h2 { font-size: 1.82rem; }
+h3 { font-size: 1.618rem; }
+h4 { font-size: 1.125rem; }
+h5 { font-size: 1rem; }
 
 h6 { 
 	text-transform: uppercase; 
-	font-size: 0.695em;
+	font-size: 0.695rem;
 }
 
 p, ul, ol, dl, blockquote {
 	margin-bottom: $base-margin-bottom; 
-	font-size: 1em;
+	font-size: 1rem;
 	line-height: $base-line-height;
 }
-					    
-ul { margin-left: 0.695em; 
-	list-style-type: disc; 
-}
 
-ol { margin-left: 0.695em; 
-	list-style-type: decimal; 
+ol,
+ul {
+	margin-left: 0.695rem;
 }
+					    
+ul { list-style-type: disc; }
+ol { list-style-type: decimal; }
 
 ol ul,
 ul ol,
@@ -66,25 +69,16 @@ small {
 	font-size: 80%; 
 }
 
-a, a:visited { 
-	outline: none; 
-	color: $link-color; 
+a, a:visited, a:hover { 
 	text-decoration: none; 
-	border-bottom: 1px dotted $link-color;
+	outline: none;
 }
 
-a:hover { 
-	outline: none; 
-	text-decoration:none; 
-}
+a, a:visited { color: $link-color; }
+a:hover { color: darken($link-color, 16.646%); }
+a:active, a:focus { outline: none; }
 
-a:active, a:focus { 
-	outline: none; 
-}
-
-pre {
-	white-space: pre-wrap;
-}
+pre { white-space: pre-wrap; }
 
 code {
 	color: $code-text-color;
@@ -93,12 +87,16 @@ code {
 
 blockquote {
 	margin-left: 0;
-	padding-left: 1.618em;
+	padding-left: 1.618rem;
 	border-left: 5px solid lighten($text-color, 70%);
 	color: lighten($text-color, 20%);
 }
 
 hr {
+	margin-bottom: $base-margin-bottom;
+	height: 1px;
+	background-color: #ccc;
+	border: 0;
 }
 
 hr.fancy {
