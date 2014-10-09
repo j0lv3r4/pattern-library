@@ -1,10 +1,10 @@
 {
-  "name": "pattern-library",
+  "name": "Userify.com",
   "version": "0.1.0",
   "authors": [
     "Juan Olvera <thinkxl@gmail.com>"
   ],
-  "description": "pattern library for personal projects",
+  "description": "Userify.com landing page",
   "moduleType": [
     "globals"
   ],
@@ -15,7 +15,7 @@
     "grunt"
   ],
   "license": "MIT",
-  "homepage": "http://thinkxl.github.io/html5-starter/",
+  "homepage": "Userify.com",
   "ignore": [
     "**/.*",
     "node_modules",

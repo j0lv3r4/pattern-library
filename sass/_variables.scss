@@ -1,6 +1,7 @@
 // General
-$site-width: 65rem;
+$site-width: 67.773rem;
 $baseline: 1.618rem;
+$roundness: 0.236rem;
 
 // Grid Variables.
 $column-count: 12;
@@ -24,7 +25,7 @@ $code-font-family: 'DejaVu Sans Mono', Inconsolata, Consolas, 'Lucida Console', 
 $code-text-color: brown;
 
 // Button Variables.
-$btn-roundness: 0.236rem;
+$btn-roundness: $roundness;
 
 $btn-small-font-size: 0.618rem;
 $btn-large-font-size: $baseline;

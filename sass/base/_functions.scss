@@ -1,18 +1,56 @@
 // Responsive
 @mixin respond-to($size) {
-	@media only screen and (max-width: $size) { @content; }
+	@media only screen and (min-width: $size) { @content; }
 }
 
-@mixin button($background-color, $text-color) {
-	background-color: $background-color;
-	color: $text-color;
+// @mixin button($background-color, $text-color) {
+// 	background-color: $background-color;
+// 	color: $text-color;
+// 
+// 	&:hover {
+// 		background-color: darken($background-color, 15%);
+// 		color: $text-color;
+// 	}
+// 
+// 	&:active {
+// 		background-color: darken($background-color, 12%);
+// 	}
+// }
 
+@mixin gradient-button($top, $bottom, $text-color) {
+	color: $text-color;
+	background: $top; /* Old browsers */
+	background: -moz-linear-gradient(top,  $top 0%, $bottom 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$top), color-stop(100%,$bottom)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  $top 0%,$bottom 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  $top 0%,$bottom 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  $top 0%,$bottom 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  $top 0%,$bottom 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$top', endColorstr='$bottom',GradientType=0 ); /* IE6-9 */
+	box-shadow: 0 3px 0 darken($bottom, 7%);
+
+	&:visited,
 	&:hover {
-		background-color: darken($background-color, 15%);
 		color: $text-color;
+		background: $bottom;
 	}
 
 	&:active {
-		background-color: darken($background-color, 12%);
+		background: $top;
 	}
+}
+
+.section-big {
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
+
+.section {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+.section-small {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 }

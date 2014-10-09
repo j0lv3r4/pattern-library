@@ -1,9 +1,9 @@
 {
-  "name": "pattern-library",
+  "name": "Userify.com",
   "version": "0.1.0",
-  "description": "pattern library for personal projects",
+  "description": "Userify landing page",
   "license": "MIT",
-  "repository": "thinkxl/pattern-library",
+  "repository": "userify/website",
   "author": "Juan Olvera",
   "main": "index.html",
   "keywords": [

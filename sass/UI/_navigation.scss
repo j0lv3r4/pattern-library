@@ -1,1 +1,19 @@
 .site-navigation {}
+
+/*
+ * Main navigation 
+ */
+
+.main-nav-container {
+	text-align: right;
+}
+
+.main-nav {
+	padding-top: 0.618rem;
+	padding-bottom: 0.618rem;
+}
+
+.main-nav-el {
+	margin-right: 0.618rem;
+	display: inline-block;
+}
