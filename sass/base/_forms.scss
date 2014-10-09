@@ -16,15 +16,12 @@ form {
 		input:not([class^="btn"]),
 		textarea {
 			border: 1px solid $field-border-color;	
-			padding: 0.382em;
-			border-radius: $roundness;
-			background-color: lighten(#eee, 5%);
+			padding: 0.618em;
 
-			&:focus, 
+			&:focus,
 			&:hover {
 				border-color: darken($field-border-color, 15%);	
 				outline: none;
-				background-color: #fff;
 			}
 
 			&.field-fw {
@@ -46,8 +43,8 @@ form {
 	}
 
 	.field-error {
-		label, 
-		.help, 
+		label,
+		.help,
 		input {
 			color: $field-error-color;
 			border-color: lighten($field-error-color, 40%) !important;
@@ -60,9 +57,8 @@ form {
 
 	fieldset {
 		margin-bottom: 1em;
-		padding: 1.618em;
 		border: 1px solid $field-border-color;
-		border-radius: $roundness;
+		padding: 1.618em;
 
 		legend {
 			padding: 0 0.618em;

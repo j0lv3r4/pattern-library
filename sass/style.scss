@@ -20,13 +20,9 @@
  * Layout 
  */
 
-@import "layout/typography";
-
 @import "layout/header";
 
 @import "layout/container";
-
-@import "layout/main";
 
 @import "layout/footer";
 
@@ -47,7 +43,7 @@
 @import "UI/feedback";
 
 /*
- * Style guide examples 
+ * Example page
  */
 
-// @import "pages/example";
+@import "pages/example";

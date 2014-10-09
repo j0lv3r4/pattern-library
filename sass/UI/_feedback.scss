@@ -1,11 +1,10 @@
 @import "../variables";
 
 [class^="alert-"] {
-	margin: 1em 0;
-	padding: 1.125em;
 	border: 1px solid;
 	border-bottom-width: 3px;
-	border-radius: $roundness;
+	margin: 1em 0;
+	padding: 1.125em;
 
 	p {
 		margin: 0;
