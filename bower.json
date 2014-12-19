@@ -15,7 +15,7 @@
     "grunt"
   ],
   "license": "MIT",
-  "homepage": "http://thinkxl.github.io/html5-starter/",
+  "homepage": "http://thinkxl.github.io/pattern-library/",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -26,7 +26,10 @@
   "dependencies": {
     "jquery": "~2.1.1",
     "normalize.css": "latest",
-    "hyx.scss": "latest",
     "fontawesome": "latest"
+  },
+  "devDependencies": {
+    "namespace-type": "git@github.com:thinkxl/type.git#~0.1.0",
+    "hyx.scss": "latest"
   }
 }

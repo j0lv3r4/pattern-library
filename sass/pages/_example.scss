@@ -1,4 +1,5 @@
 // Presentation styles
+
 .demo-col {
 	margin-top: 0.618em;
 	display: block;
@@ -31,4 +32,14 @@
 
 .site-description {
 	margin-bottom: 0;
+}
+
+// Sections
+
+section[class^="section-"] {
+	margin-bottom: 8em;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
 }
