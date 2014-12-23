@@ -5,8 +5,8 @@
 
 // Vendors
 
-@import "../bower_components/hyx.scss/hyx";
-@import "../bower_components/namespace-type/sass/_type";
+@import "vendors/_hyx";
+@import "vendors/_type";
 
 /*
  * Base 
@@ -35,6 +35,7 @@
 @import "UI/buttons";
 @import "UI/icons";
 @import "UI/feedback";
+@import "UI/code";
 
 /*
  * Example page

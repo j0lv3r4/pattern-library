@@ -20,12 +20,15 @@ button,
 .btn,
 a.btn {
 	@extend .button-static;
-	@include button(#3498db, #fff);
+	@include button($btn-default-bg, $btn-default-text-color);
 }
 
 
+a.btn-primary,
 .btn-primary {
 	@extend .btn;
+
+	@include button($btn-primary-bg, $btn-primary-text-color);
 }
 
 .btn-small {

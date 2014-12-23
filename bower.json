@@ -27,9 +27,5 @@
     "jquery": "~2.1.1",
     "normalize.css": "latest",
     "fontawesome": "latest"
-  },
-  "devDependencies": {
-    "namespace-type": "git@github.com:thinkxl/type.git#~0.1.0",
-    "hyx.scss": "latest"
   }
 }

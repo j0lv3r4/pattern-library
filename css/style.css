@@ -84,7 +84,6 @@ abbr[title] {
   border-bottom: 1px dotted #e5e5e5; }
 
 pre {
-  margin-left: 1.125rem;
   white-space: pre-wrap; }
 
 code {
@@ -717,15 +716,6 @@ img {
   margin: 0 auto;
   max-width: 65rem; }
 
-/*! Hyx v2.0.0 | MIT License | http://github.com/thinkxl/hyx.less */
-.row {
-  width: 100%; }
-  .row:before, .row:after {
-    content: " ";
-    display: table; }
-  .row:after {
-    clear: both; }
-
 [class^="col-"]:first-child {
   margin-left: 0; }
 
@@ -766,11 +756,11 @@ img {
  */
 .button-static, button,
 .btn,
+a.btn-primary,
 .btn-primary,
 .btn-small,
 .btn-large,
 a.btn,
-a.btn-primary,
 a.btn-small,
 a.btn-large {
   display: inline-block;
@@ -791,6 +781,7 @@ a.btn-large {
 
 button,
 .btn,
+a.btn-primary,
 .btn-primary,
 .btn-small,
 .btn-large,
@@ -798,8 +789,8 @@ a.btn,
 a.btn-primary,
 a.btn-small,
 a.btn-large {
-  background-color: #3498db;
-  color: #fff; }
+  background-color: #bbb;
+  color: #333; }
   button:hover,
   .btn:hover,
   .btn-primary:hover,
@@ -809,8 +800,8 @@ a.btn-large {
   a.btn-primary:hover,
   a.btn-small:hover,
   a.btn-large:hover {
-    background-color: #1d6fa5;
-    color: #fff; }
+    background-color: #959595;
+    color: #333; }
   button:active,
   .btn:active,
   .btn-primary:active,
@@ -820,13 +811,25 @@ a.btn-large {
   a.btn-primary:active,
   a.btn-small:active,
   a.btn-large:active {
-    background-color: #2077b2; }
+    background-color: #9c9c9c; }
+
+a.btn-primary,
+.btn-primary {
+  background-color: #0078E7;
+  color: #e7f3ff; }
+  a.btn-primary:hover,
+  .btn-primary:hover {
+    background-color: #00509b;
+    color: #e7f3ff; }
+  a.btn-primary:active,
+  .btn-primary:active {
+    background-color: #0058aa; }
 
 .btn-small {
-  font-size: 0.618rem; }
+  font-size: 0.818rem; }
 
 .btn-large {
-  font-size: 1.618rem;
+  font-size: 1.125rem;
   font-weight: bold; }
 
 [class^="icon-"] {
@@ -882,15 +885,22 @@ a.btn-large {
   .alert-success strong {
     color: #74a730; }
 
+pre > code {
+  border: 1px solid #ccc;
+  border-radius: 0.318em; }
+
 /*
  * Example page
  */
+.site-title {
+  color: #fff; }
+
 .demo-col {
   margin-top: 0.618em;
   display: block;
   padding: 0.618em 0;
   border-radius: 3px;
-  background-color: #eee;
+  background-color: #ccc;
   text-align: center; }
 
 .grid-notes {
@@ -915,7 +925,9 @@ a.btn-large {
 .site-description {
   margin-bottom: 0; }
 
-section[class^="section-"] {
-  margin-bottom: 8em; }
-  section[class^="section-"]:last-child {
+.section-demo {
+  margin-bottom: 8em;
+  padding: 2em;
+  background-color: #eee; }
+  .section-demo:last-child {
     margin-bottom: 0; }
