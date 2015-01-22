@@ -19,8 +19,8 @@ module.exports = function(grunt) {
 
   // Configurable paths
   var config = {
-    dev: '.',
-    prod: 'prod'
+    dev: 'src',
+    prod: 'dist'
   };
 
   grunt.initConfig({
@@ -77,6 +77,7 @@ module.exports = function(grunt) {
 
       connect: {
         options: {
+          debug: true,
           port: 9000,
           open: true,
           livereload: 35729,
@@ -85,10 +86,11 @@ module.exports = function(grunt) {
         },
         livereload: {
           options: {
+            debug: true,
             middleware: function ( connect ) {
               return [
                 mountFolder(connect, '.tmp'),
-                mountFolder(connect, '')
+                mountFolder(connect, 'src')
               ];
             }
           }
