@@ -14,8 +14,8 @@ module.exports = function(grunt) {
   require('time-grunt')(grunt);
 
   // Load grunt tasks automatically
-  // require('load-grunt-tasks')(grunt);
-  require('jit-grunt')(grunt);
+  require('load-grunt-tasks')(grunt);
+  // require('jit-grunt')(grunt);
 
   // Configurable paths
   var config = {
@@ -158,12 +158,18 @@ module.exports = function(grunt) {
       rsync: {
         options: {
           args: ["--verbose"],
-          exclude: ["sass", "*~", "*.swp", ".*", "*.md", "node_modules", "prod", "bower_components", "Gruntfile.js", "package.json", "bower.json"],
+          exclude: [
+            "sass", 
+            "*~", 
+            "*.swp", 
+            ".*", 
+            "*.md"
+          ],
           recursive: true
         },
         dist: {
           options: {
-            src: "<%= config.dev %>",
+            src: "<%= config.dev %>/",
             dest: "<%= config.prod %>"
           }
         }
