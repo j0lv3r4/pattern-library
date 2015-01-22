@@ -1,18 +1,19 @@
+// Vendors
+
+@import "vendors/hyx";
+@import "vendors/type";
+@import "vendors/normalize";
+
 // Settings
+
 @import "variables";
 @import "base/functions";
 @import "base/box-sizing";
-
-// Vendors
-
-@import "vendors/_hyx";
-@import "vendors/_type";
 
 /*
  * Base 
  */
 
-@import "base/normalize";
 @import "base/typography";
 @import "base/forms";
 @import "base/images";
