@@ -1,0 +1,41 @@
+// Mixins
+
+// Mobile first media queries
+@mixin respond-to($size) {
+	@media only screen and (min-width: $size) {
+		@content;
+		}
+}
+
+// Button
+@mixin button($background-color, $text-color) {
+	background-color: $background-color;
+	color: $text-color;
+
+	&:hover {
+		background-color: darken($background-color, 15%);
+		color: $text-color;
+	}
+
+	&:active {
+		background-color: darken($background-color, 12%);
+	}
+}
+
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Clearfix
+@mixin clearfix() {
+	content: "";
+	display: table;
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+	clear: both;
+}

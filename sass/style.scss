@@ -1,45 +1,51 @@
+/*
+ * Released under MIT license by @thinkxl. Learn more at
+ * https://github.com/thinkxl/pattern-library.
+ */
+ 
+//
+// Contents
+//
 // Vendors
+// Utils
+// Base
+// Components
+// Layouts
+// Pages
+//
 
-@import "vendors/hyx";
-@import "vendors/type";
-@import "vendors/normalize";
-
-// Settings
-
-@import "variables";
-@import "base/functions";
-@import "base/box-sizing";
-
-/*
- * Base 
- */
-
+// Vendors
+ 
+@import "../bower_components/hyx.scss/hyx";
+ 
+// Utils
+ 
+@import "utils/variables";
+@import "utils/functions";
+@import "utils/mixins";
+@import "utils/extends";
+ 
+// Base
+ 
+@import "base/base";
 @import "base/typography";
-@import "base/forms";
-@import "base/images";
-
-/*
- * Layout 
- */
-
+ 
+// Components
+ 
+@import "components/buttons";
+@import "components/feedback";
+@import "components/forms";
+@import "components/icons";
+@import "components/images";
+@import "components/navigation";
+ 
+// Layout
+ 
 @import "layout/header";
-@import "layout/container";
+@import "layout/main";
 @import "layout/footer";
 @import "layout/grid";
-@import "layout/sidebar";
-
-/*
- * UI 
- */
-
-@import "UI/navigation";
-@import "UI/buttons";
-@import "UI/icons";
-@import "UI/feedback";
-@import "UI/code";
-
-/*
- * Example page
- */
-
-@import "pages/example";
+ 
+// Pages
+ 
+@import "pages/style-guide";

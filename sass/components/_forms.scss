@@ -1,6 +1,12 @@
-@import "../variables";
+/*
+ * Forms 
+ */
 
 form {
+	input:not([type=checkbox][type=radio]) {
+		display: block;
+	}
+
 	.field-group {
 		margin-bottom: 1em;
 
@@ -9,14 +15,17 @@ form {
 		}
 
 		label {
-			display: block;
 			font-weight: bold;
+		}
+
+		textarea {
+			width: 100%;	
 		}
 
 		input:not([class^="btn"]),
 		textarea {
-			border: 1px solid $field-border-color;	
 			padding: 0.618em;
+			border: 1px solid $field-border-color;	
 
 			&:focus,
 			&:hover {
@@ -36,7 +45,7 @@ form {
 
 		.form-help {
 			margin-top: 0.618em;
-			color: $muted-text-color;
+			color: $base-text-muted-color;
 			font-size: 0.818em;
 			font-style: italic;
 		}
@@ -58,7 +67,6 @@ form {
 	fieldset {
 		margin-bottom: 1em;
 		border: 1px solid $field-border-color;
-		padding: 1.618em;
 
 		legend {
 			padding: 0 0.618em;
@@ -68,11 +76,5 @@ form {
 		p:last-child {
 			margin-bottom: 0;	
 		}
-	}
-
-	// Hide defaults to create custom better looking
-	input[type="checkbox"],
-	input[type="radio"] {
-		display: inline-block;
-	}
+	}	
 }

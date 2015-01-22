@@ -1,0 +1,10 @@
+/* 
+ * Main 
+ */
+
+.container {
+	margin: 0 auto;
+	padding-left: 1#{$base-unit};
+	padding-right: 1#{$base-unit};
+	max-width: $site-width;
+}
