@@ -119,7 +119,7 @@ module.exports = function(grunt) {
 			// Automatically inject Bower components into the HTML file
       bowerInstall: {
 				dist: {
-					src:['<%= config.dev %>/index.html']         
+					src:['<%= config.dev %>/*.html']
 				}
       },
 
@@ -160,6 +160,7 @@ module.exports = function(grunt) {
           args: ["--verbose"],
           exclude: [
             "sass", 
+            "bower_components",
             "*~", 
             "*.swp", 
             ".*", 
