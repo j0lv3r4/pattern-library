@@ -224,8 +224,7 @@ a.button-primary,
   font-size: 0.818em; }
 
 .button-large {
-  font-size: 1.125em;
-  font-weight: bold; }
+  font-size: 1.125em; }
 
 /*
  * Feedback 
@@ -450,8 +449,8 @@ object {
   width: 66.33333%;
   margin-left: 0; }
 
-.masthead {
-  margin-bottom: 4em;
+.demo-masthead {
+  margin-bottom: 1em;
   padding: 2em 0;
   background-color: #333;
   color: #fff; }
