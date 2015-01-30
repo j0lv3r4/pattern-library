@@ -1,4 +1,7 @@
+- [ ] Migrate to Jekyll
 - [ ] Add tabs
 - [ ] Add horizontal and vertical navigation
-- [ ] On `_typography.scss` line 35 change to `$base-line-height;`
+- [ ] Add basic dropdowns (only CSS)
+- [ ] Add color palette
+- [ ] Add code examples to icons and forms
 - [x] Fix buttons styles

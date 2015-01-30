@@ -13,9 +13,10 @@
 
 /*
  * Extends 
- *
- * Extends that are going to be used globally
  */
+.title {
+  margin-top: 0; }
+
 /*
  * Base
  *
@@ -47,7 +48,7 @@ body {
 
 /* No `:visited` state is required by default (browsers will use `a`) */
 a {
-  color: brown;
+  color: #619CCF;
   text-decoration: none;
   /* `:focus` is linked to `:hover` for basic accessibility */ }
   a:hover, a:focus {
@@ -64,30 +65,38 @@ http://modularscale.com/scale/?px1=16&px2=18&ra1=1.618&ra2=0
 16px @ 1:1.618 
 18px @ 1:1.618 
 ----------------------*/
-/* Headings */
+/* Headings base style */
 h1, h2, h3, h4, h5, h6 {
-  margin-top: 1rem;
-  margin-bottom: 0.382rem;
+  margin-top: 1em;
+  margin-bottom: 0.382em;
   line-height: 1.125;
   /* 1 */
   text-rendering: optimizeLegibility; }
 
+/* Headings specific font size */
 h1 {
-  font-size: 2.618rem; }
+  font-size: 2.225em; }
 
 h2 {
-  font-size: 1.618rem; }
+  font-size: 1.718em; }
 
 h3 {
-  font-size: 1.125rem; }
+  font-size: 1.375em; }
 
-h4, h5, h6 {
-  font-size: 1rem; }
+h4 {
+  font-size: 1em; }
+
+h5 {
+  font-size: 1em; }
+
+h6 {
+  font-size: 1em;
+  font-weight: normal; }
 
 /* Paragraph */
 p {
-  margin-top: 1rem;
-  margin-bottom: 1rem; }
+  margin-top: 1em;
+  margin-bottom: 1em; }
 
 /* Lists */
 nav ul,
@@ -98,7 +107,7 @@ nav ol {
 
 ul, ol, dl {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 1em;
   line-height: 1.618; }
 
 li > ul,
@@ -108,7 +117,7 @@ li > ol {
 /* Better styled `<hr>` */
 hr {
   position: relative;
-  margin: 1.5rem 0;
+  margin: 1.5em 0;
   border: 0;
   border-top: 1px solid #eee;
   border-bottom: 1px solid #fff; }
@@ -118,7 +127,10 @@ pre {
   white-space: pre-wrap; }
 
 code {
-  color: brown; }
+  color: brown;
+  font-family: "Menlo", Inconsolata, Consolas, Monaco, monospace;
+  font-size: 0.8em;
+  background-color: #f2f2f2; }
 
 kbd,
 samp {
@@ -126,10 +138,10 @@ samp {
 
 /* Quotes */
 blockquote {
-  padding-right: 5rem;
-  padding-left: 1.25rem;
-  margin: 1rem 0;
-  border-left: 0.25rem solid #d9d9d9; }
+  padding-right: 5em;
+  padding-left: 1.25em;
+  margin: 1em 0;
+  border-left: 0.25em solid #d9d9d9; }
 
 blockquote p:last-child {
   margin-bottom: 0; }
@@ -138,91 +150,91 @@ blockquote p:last-child {
  * Buttons 
  */
 .button-static, button,
-.btn,
-a.btn-primary,
-.btn-primary,
-.btn-small,
-.btn-large,
-a.btn,
-a.btn-small,
-a.btn-large {
+.button,
+a.button-primary,
+.button-primary,
+.button-small,
+.button-large,
+a.button,
+a.button-small,
+a.button-large {
   display: inline-block;
-  padding: 0.618em 1em;
+  padding: 0.318em 1em;
   border: 0;
-  border-radius: 0.236rem;
+  border-radius: 0.236em;
   text-decoration: none;
   font-family: inherit;
   font-family: inherit;
   line-height: 1;
   cursor: pointer; }
   .button-static:focus, button:focus,
-  .btn:focus,
-  .btn-primary:focus,
-  .btn-small:focus,
-  .btn-large:focus {
+  .button:focus,
+  .button-primary:focus,
+  .button-small:focus,
+  .button-large:focus {
     outline: none; }
 
 button,
-.btn,
-a.btn-primary,
-.btn-primary,
-.btn-small,
-.btn-large,
-a.btn,
-a.btn-primary,
-a.btn-small,
-a.btn-large {
+.button,
+a.button-primary,
+.button-primary,
+.button-small,
+.button-large,
+a.button,
+a.button-primary,
+a.button-small,
+a.button-large {
   background-color: #bbb;
   color: #333; }
   button:hover,
-  .btn:hover,
-  .btn-primary:hover,
-  .btn-small:hover,
-  .btn-large:hover,
-  a.btn:hover,
-  a.btn-primary:hover,
-  a.btn-small:hover,
-  a.btn-large:hover {
+  .button:hover,
+  .button-primary:hover,
+  .button-small:hover,
+  .button-large:hover,
+  a.button:hover,
+  a.button-primary:hover,
+  a.button-small:hover,
+  a.button-large:hover {
     background-color: #959595;
     color: #333; }
   button:active,
-  .btn:active,
-  .btn-primary:active,
-  .btn-small:active,
-  .btn-large:active,
-  a.btn:active,
-  a.btn-primary:active,
-  a.btn-small:active,
-  a.btn-large:active {
+  .button:active,
+  .button-primary:active,
+  .button-small:active,
+  .button-large:active,
+  a.button:active,
+  a.button-primary:active,
+  a.button-small:active,
+  a.button-large:active {
     background-color: #9c9c9c; }
 
-a.btn-primary,
-.btn-primary {
+a.button-primary,
+.button-primary {
   background-color: #0078E7;
   color: #e7f3ff; }
-  a.btn-primary:hover,
-  .btn-primary:hover {
+  a.button-primary:hover,
+  .button-primary:hover {
     background-color: #00509b;
     color: #e7f3ff; }
-  a.btn-primary:active,
-  .btn-primary:active {
+  a.button-primary:active,
+  .button-primary:active {
     background-color: #0058aa; }
 
-.btn-small {
-  font-size: 0.818rem; }
+.button-small {
+  font-size: 0.818em; }
 
-.btn-large {
-  font-size: 1.125rem;
+.button-large {
+  font-size: 1.125em;
   font-weight: bold; }
 
 /*
  * Feedback 
  */
 [class^="alert-"] {
-  border: 1px solid;
-  border-bottom-width: 3px;
   margin: 1em 0;
-  padding: 1.125em; }
+  padding: 0.618em;
+  border: 1px solid;
+  border-bottom-width: 3px; }
   [class^="alert-"] p {
     margin: 0; }
 
@@ -253,50 +265,53 @@ a.btn-primary,
 /*
  * Forms 
  */
-form input:not([type=checkbox][type=radio]) {
-  display: block; }
-form .field-group {
+.field-group {
   margin-bottom: 1em; }
-  form .field-group:last-child {
+  .field-group:last-child {
     margin-bottom: 0; }
-  form .field-group label {
+  .field-group label {
     font-weight: bold; }
-  form .field-group textarea {
+  .field-group textarea {
     width: 100%; }
-  form .field-group input:not([class^="btn"]),
-  form .field-group textarea {
-    padding: 0.618em;
+  .field-group input:not([type="radio"]):not([type="checkbox"]) {
+    display: block; }
+  .field-group input:not([class^="btn"]),
+  .field-group textarea {
+    padding: 0.218em;
     border: 1px solid #ccc; }
-    form .field-group input:not([class^="btn"]):focus, form .field-group input:not([class^="btn"]):hover,
-    form .field-group textarea:focus,
-    form .field-group textarea:hover {
+    .field-group input:not([class^="btn"]):focus, .field-group input:not([class^="btn"]):hover,
+    .field-group textarea:focus,
+    .field-group textarea:hover {
       border-color: #a6a6a6;
       outline: none; }
-    form .field-group input:not([class^="btn"]).field-fw,
-    form .field-group textarea.field-fw {
+    .field-group input:not([class^="btn"]).field-fw,
+    .field-group textarea.field-fw {
       width: 100%; }
-  form .field-group .help {
+  .field-group .help {
     font-size: 0.718em;
     margin: 0.618em 0 0; }
-  form .field-group .form-help {
+  .field-group .form-help {
     margin-top: 0.618em;
-    color: #595959;
+    color: #bfbfbf;
     font-size: 0.818em;
     font-style: italic; }
-form .field-error label,
-form .field-error .help,
-form .field-error input {
+
+.field-error label,
+.field-error .help,
+.field-error input {
   color: brown;
   border-color: #ebb0b0 !important; }
-form .required {
+
+.required {
   color: brown; }
-form fieldset {
+
+fieldset {
   margin-bottom: 1em;
   border: 1px solid #ccc; }
-  form fieldset legend {
+  fieldset legend {
     padding: 0 0.618em;
     font-weight: bold; }
-  form fieldset p:last-child {
+  fieldset p:last-child {
     margin-bottom: 0; }
 
 /*
@@ -331,7 +346,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  margin: 0 0 1rem; }
+  margin: 0 0 1em; }
 
 /* Make sure embeds and iframes fit their containers. */
 embed,
@@ -350,9 +365,9 @@ object {
  */
 .container {
   margin: 0 auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  max-width: 60rem; }
+  padding-left: 1em;
+  padding-right: 1em;
+  max-width: 50em; }
 
 /*
  * Footer 
@@ -413,21 +428,22 @@ object {
       width: 32.66667%;
       margin-left: 1%; } }
 
-.site-title {
-  color: #fff; }
-
-.demo-col {
-  margin-top: 0.618em;
-  display: block;
-  padding: 0.618em 0;
-  border-radius: 3px;
-  background-color: #ccc;
-  text-align: center; }
-
+/*
+ * This styles are used only for the demo presentation 
+ * and should not be used on production.
+ */
 .grid-notes {
   float: left;
   width: 32.66667%;
   margin-left: 1%; }
+
+.demo-col {
+  margin-top: 0.618em;
+  display: block;
+  padding: 0.218em 0;
+  border-radius: 3px;
+  background-color: #bbe0ce;
+  text-align: center; }
 
 .grid-snippet {
   float: left;
@@ -441,16 +457,25 @@ object {
   color: #fff; }
 
 .site-title {
-  margin-top: 0; }
+  margin-top: 0;
+  color: #fff; }
 
 .site-description {
   margin-bottom: 0; }
 
 .section-demo {
-  margin-bottom: 8em; }
+  margin-bottom: 1em;
+  padding: 1em; }
   .section-demo:last-child {
     margin-bottom: 0; }
 
+h4.description {
+  display: block;
+  padding: 0.218em;
+  margin-bottom: 1em;
+  background-color: #afcde7;
+  font-weight: normal; }
+
 pre > code {
-  border: 1px solid #ccc;
-  border-radius: 0.318em; }
+  border-radius: 0.318em;
+  border: 1px solid #ccc; }

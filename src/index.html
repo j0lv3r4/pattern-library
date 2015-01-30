@@ -9,8 +9,8 @@
 		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 		<!-- build:css css/vendor.min.css -->
 		<!-- bower:css -->
-		<link rel="stylesheet" href="../bower_components/normalize.css/normalize.css" />
-		<link rel="stylesheet" href="../bower_components/fontawesome/css/font-awesome.css" />
+		<link rel="stylesheet" href="bower_components/normalize.css/normalize.css" />
+		<link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.css" />
 		<!-- endbower -->
 		<!-- endbuild -->
 
@@ -25,13 +25,23 @@
 	<body>
     <header class="masthead">
       <div class="container">
-        <div class="row">
-          <div class="col-1-1">
-            <h1>Site title</h1>
-          </div> <!-- .col-1-1 -->
-        </div> <!-- .row -->
+        <h1 class="site-title">Personal Style Guide</h1>
+        <p class="site-description">Project by <a href="http://twitter.com/thinkxl/">@thinkxl</a></p>
+
+      </div>
+    </header>
+	
+    <div class="breadcrumb">
+      <div class="container">
+        <nav role="navigation" class="breadcrumb-nav">
+        <a href="index.html">Home</a> /
+        <a href="style-guide.html">Style Guide</a> /
+        <a href="typography.html">Full Typography Example</a>
+        </nav><!--/.breadcrumb-nav-->
       </div> <!-- .container -->
-    </header> <!-- .masthead -->
+    </div> <!-- .breadcrumb -->
+
+    <br>
 
     <div class="container">
       <div class="row">
@@ -51,7 +61,7 @@
 
     <!-- build:js js/vendor.js -->
     <!-- bower:js -->
-    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 

@@ -2,79 +2,77 @@
  * Forms 
  */
 
-form {
-	input:not([type=checkbox][type=radio]) {
+.field-group {
+	margin-bottom: 1em;
+
+	&:last-child {
+		margin-bottom: 0;	
+	}
+
+	label {
+		font-weight: bold;
+	}
+
+	textarea {
+		width: 100%;	
+	}
+
+	input:not([type="radio"]):not([type="checkbox"]) {
 		display: block;
 	}
 
-	.field-group {
-		margin-bottom: 1em;
+	input:not([class^="btn"]),
+	textarea {
+		padding: 0.218#{$base-unit};
+		border: 1px solid $field-border-color;	
 
-		&:last-child {
-			margin-bottom: 0;	
+		&:focus,
+		&:hover {
+			border-color: darken($field-border-color, 15%);	
+			outline: none;
 		}
 
-		label {
-			font-weight: bold;
-		}
-
-		textarea {
+		&.field-fw {
 			width: 100%;	
 		}
-
-		input:not([class^="btn"]),
-		textarea {
-			padding: 0.618em;
-			border: 1px solid $field-border-color;	
-
-			&:focus,
-			&:hover {
-				border-color: darken($field-border-color, 15%);	
-				outline: none;
-			}
-
-			&.field-fw {
-				width: 100%;	
-			}
-		}
-
-		.help {
-			font-size: 0.718em;
-			margin: 0.618em 0 0;
-		}
-
-		.form-help {
-			margin-top: 0.618em;
-			color: $base-text-muted-color;
-			font-size: 0.818em;
-			font-style: italic;
-		}
 	}
 
-	.field-error {
-		label,
-		.help,
-		input {
-			color: $field-error-color;
-			border-color: lighten($field-error-color, 40%) !important;
-		}
+	.help {
+		font-size: 0.718em;
+		margin: 0.618em 0 0;
 	}
 
-	.required {
-		color: $field-required-color;
+	.form-help {
+		margin-top: 0.618em;
+		color: $color-muted;
+		font-size: 0.818em;
+		font-style: italic;
 	}
-
-	fieldset {
-		margin-bottom: 1em;
-		border: 1px solid $field-border-color;
-
-		legend {
-			padding: 0 0.618em;
-			font-weight: bold;
-		}
-
-		p:last-child {
-			margin-bottom: 0;	
-		}
-	}	
 }
+
+.field-error {
+	label,
+	.help,
+	input {
+		color: $field-error-color;
+		border-color: lighten($field-error-color, 40%) !important;
+	}
+}
+
+.required {
+	color: $field-required-color;
+}
+
+fieldset {
+	margin-bottom: 1em;
+	border: 1px solid $field-border-color;
+
+	legend {
+		padding: 0 0.618em;
+		font-weight: bold;
+	}
+
+	p:last-child {
+		margin-bottom: 0;	
+	}
+}	

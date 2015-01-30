@@ -26,6 +26,7 @@
   "dependencies": {
     "jquery": "~2.1.1",
     "normalize.css": "latest",
-    "fontawesome": "latest"
+    "fontawesome": "latest",
+    "hyx.scss": "~2.0.0"
   }
 }

@@ -1,71 +1,74 @@
 // General
 
-$base-unit: 'rem' !default;
-$site-width: 60#{$base-unit};
+$base-unit: 'em' !default;
+$site-width: 50#{$base-unit};
 $baseline: 1#{$base-unit};
-$bower: "../../../bower_components/";
+$bower: "../bower_components/";
 
-// Base Variables.
+// Color 
 
-$base-line-height: 1.618;
-$base-margin-top: $baseline;
-$base-margin-bottom: $baseline;
-
-$base-text-color: #333;
-$base-text-link-color: brown;
-$base-text-muted-color: lighten($base-text-color, 15%);
-
-$base-font-family: 'PT Sans', sans-serif;
-$base-font-size: 16px;
-
-$base-headings-color: $base-text-color;
-$base-headings-margin-bottom: $base-margin-bottom;
-$base-headings-line-height: 1.125;
-
-$base-code-font-family: 'DejaVu Sans Mono', Inconsolata, Consolas, 'Lucida Console', monospace;
-$base-code-text-color: brown;
+$color-base: #333;
+$color-link: #619CCF;
+$color-highlight: #EEEE8F;
+$color-muted: lighten($color-base, 55%);
+$color-code: brown;
 
 // Typography
 
+$font-size-base: 16px;
+$line-height: 1.618;
+$margin-top: $baseline;
+$margin-bottom: $baseline;
+
+$font-sans-regular: 'PT Sans', sans-serif;
+$font-serif-regular: 'Georgia', serif;
+$font-monospace-regular: 'Menlo', Inconsolata, Consolas, Monaco, monospace;
+
+$headings-color: $color-base;
+$headings-margin-bottom: $margin-bottom;
+$headings-line-height: 1.125;
+
+$font-size-h1: 2.225#{$base-unit};
+$font-size-h2: 1.718#{$base-unit};
+$font-size-h3: 1.375#{$base-unit};
+$font-size-h4: 1#{$base-unit};
+$font-size-h5: 1#{$base-unit};
+$font-size-h6: 1#{$base-unit};
+
 $indented-paragraphs: false !default;
 
-$h1-font-size: 2.618#{$base-unit};
-$h2-font-size: 1.618#{$base-unit};
-$h3-font-size: 1.125#{$base-unit};
-$h4-font-size: 1#{$base-unit};
-
-// Grid Variables.
+// Grid
 
 $column-count: 12;
 $gutter: 3%;
 
-// Button Variables.
+// Button
 
-$btn-roundness: 0.236#{$base-unit};
+$button-roundness: 0.236#{$base-unit};
 
-$btn-small-font-size: 0.818#{$base-unit};
-$btn-large-font-size: 1.125#{$base-unit};
+$button-small-font-size: 0.818#{$base-unit};
+$button-large-font-size: 1.125#{$base-unit};
 
-$btn-default-bg: #bbb;
-$btn-default-text-color: #333;
+$button-default-bg: #bbb;
+$button-default-text-color: #333;
 
-$btn-primary-bg: #0078E7;
-$btn-primary-text-color: lighten($btn-primary-bg, 50%);
+$button-primary-bg: #0078E7;
+$button-primary-text-color: lighten($button-primary-bg, 50%);
 
-// Form Variables.
+// Form
 
 $field-border-color: #ccc;
 $field-error-color: brown;
 $field-required-color: brown;
 
-// Icon Variables.
+// Icons
 
 $icon-roundness: 3.778px;
 $icon-border-color: #333;
 
-// Feedback Variables.
+// Feedback
 
-$information-color: #439ccf;
-$error-color: #e72915;
-$warning-color: #d35400;
-$success-color: #74a730;
+$color-information: #439ccf;
+$color-error: #e72915;
+$color-warning: #d35400;
+$color-success: #74a730;

@@ -16,7 +16,7 @@
 
 // Vendors
  
-@import "../../bower_components/hyx.scss/hyx";
+@import "../bower_components/hyx.scss/hyx";
  
 // Utils
  
@@ -24,6 +24,7 @@
 @import "utils/functions";
 @import "utils/mixins";
 @import "utils/extends";
+@import "utils/helpers";
  
 // Base
  
