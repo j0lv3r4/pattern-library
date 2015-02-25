@@ -21,7 +21,7 @@
 		display: block;
 	}
 
-	input:not([class^="btn"]),
+	input:not([class^="button"]),
 	textarea {
 		padding: 0.218#{$base-unit};
 		border: 1px solid $field-border-color;	
