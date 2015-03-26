@@ -4,15 +4,8 @@
  * Update the foundational and global aspects of the page.
  */
 
-// Local extends
-%soft-reset {
-	margin: 0;
-	padding: 0;
-}
-
+// http://www.paulirish.com/2012/box-sizing-border-box-ftw/
 html {
-	@extend %soft-reset;
-
 	-webkit-box-sizing: border-box;
 		 -moz-box-sizing: border-box;
 					box-sizing: border-box;
@@ -27,15 +20,9 @@ html {
 	font-family: $font-sans-regular;
 	font-size: $font-size-base;
 	line-height: $line-height;
-
-	@include respond-to(38em) {
-		font-size: 20px;
-	}
 }
 
 body {
-	@extend %soft-reset;
-
 	color: $color-base;
 	background-color: #fff;
 	-webkit-text-size-adjust: 100%;

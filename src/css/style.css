@@ -11,21 +11,59 @@
   .row:after {
     clear: both; }
 
+.align-left {
+  display: inline;
+  float: left;
+  margin-right: 1.5em; }
+
+.align-right {
+  display: inline;
+  float: right;
+  margin-left: 1.5em; }
+
+.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
 /*
- * Extends 
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  */
-.title {
-  margin-top: 0; }
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before, .clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+.clearfix:after {
+  clear: both; }
 
 /*
  * Base
  *
  * Update the foundational and global aspects of the page.
  */
-html, body {
-  margin: 0;
-  padding: 0; }
-
 html {
   box-sizing: border-box; }
 
@@ -36,9 +74,6 @@ html {
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 1.618; }
-  @media only screen and (min-width: 38em) {
-    html {
-      font-size: 20px; } }
 
 body {
   color: #333;
@@ -59,11 +94,11 @@ a {
 /*
  *  Typography
  */
-/* Modular Scale 
+/* Modular Scale
 http://modularscale.com/scale/?px1=16&px2=18&ra1=1.618&ra2=0
----------------------- 
-16px @ 1:1.618 
-18px @ 1:1.618 
+----------------------
+16px @ 1:1.618
+18px @ 1:1.618
 ----------------------*/
 /* Headings base style */
 h1, h2, h3, h4, h5, h6 {
@@ -88,10 +123,6 @@ h4 {
 
 h5 {
   font-size: 1em; }
-
-h6 {
-  font-size: 1em;
-  font-weight: normal; }
 
 /* Paragraph */
 p {
@@ -274,16 +305,16 @@ a.button-primary,
     width: 100%; }
   .field-group input:not([type="radio"]):not([type="checkbox"]) {
     display: block; }
-  .field-group input:not([class^="btn"]),
+  .field-group input:not([class^="button"]),
   .field-group textarea {
     padding: 0.218em;
     border: 1px solid #ccc; }
-    .field-group input:not([class^="btn"]):focus, .field-group input:not([class^="btn"]):hover,
+    .field-group input:not([class^="button"]):focus, .field-group input:not([class^="button"]):hover,
     .field-group textarea:focus,
     .field-group textarea:hover {
       border-color: #a6a6a6;
       outline: none; }
-    .field-group input:not([class^="btn"]).field-fw,
+    .field-group input:not([class^="button"]).field-fw,
     .field-group textarea.field-fw {
       width: 100%; }
   .field-group .help {
