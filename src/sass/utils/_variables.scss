@@ -1,32 +1,32 @@
-// General
+// Colors --
+
+$color-highlight: #EEEE8F;
+$color-code: brown;
+
+// Global --
 
 $base-unit: 'em' !default;
 $site-width: 50#{$base-unit};
 $baseline: 1#{$base-unit};
-$bower: "../bower_components/";
+$bower-path: "../bower_components/";
 
-// Color
 
-$color-base: #333;
-$color-link: #619CCF;
-$color-highlight: #EEEE8F;
-$color-muted: lighten($color-base, 55%);
-$color-code: brown;
+$body-bg: #fff;
+$text-color: #333;
+$link-color: #619CCf;
+$link-decoration: none;
+$link-hover-color: darken($link-color, 15%);
+$link-hover-decoration: underline;
 
-// Typography
+// Typography --
+
+$font-family-sans-serif: 'PT Sans', sans-serif;
+$font-family-serif: 'Georgia', serif;
+$font-family-monospace: 'Menlo', Inconsolata, Consolas, Monaco, monospace;
 
 $font-size-base: 16px;
-$line-height: 1.618;
-$margin-top: $baseline;
-$margin-bottom: $baseline;
-
-$font-sans-regular: 'PT Sans', sans-serif;
-$font-serif-regular: 'Georgia', serif;
-$font-monospace-regular: 'Menlo', Inconsolata, Consolas, Monaco, monospace;
-
-$headings-color: $color-base;
-$headings-margin-bottom: $margin-bottom;
-$headings-line-height: 1.125;
+$font-size-large: $font-size-base * 1.25;
+$font-size-small: $font-size-base * 0.85;
 
 $font-size-h1: 2.225#{$base-unit};
 $font-size-h2: 1.718#{$base-unit};
@@ -35,14 +35,23 @@ $font-size-h4: 1#{$base-unit};
 $font-size-h5: 1#{$base-unit};
 $font-size-h6: 1#{$base-unit};
 
+$line-height: 1.618;
+
+$text-margin-top: $baseline;
+$text-margin-bottom: $baseline;
+
+$headings-color: $text-color;
+$headings-margin-bottom: $text-margin-bottom;
+$headings-line-height: 1.125;
+
 $indented-paragraphs: false !default;
 
-// Grid
+// Grid --
 
 $column-count: 12;
 $gutter: 3%;
 
-// Button
+// Buttons --
 
 $button-roundness: 0.236#{$base-unit};
 
@@ -55,20 +64,55 @@ $button-default-text-color: #333;
 $button-primary-bg: #0078E7;
 $button-primary-text-color: lighten($button-primary-bg, 50%);
 
-// Form
+// Forms --
 
-$field-border-color: #ccc;
-$field-error-color: brown;
-$field-required-color: brown;
+// Font
+$form-font-family: $font-size-base;
+$form-font-size: 16px;
+$form-font-color: rgb(40, 40, 40);
 
-// Icons
+// Borders
+$form-border-radius: 5px;
+$form-border-width: 1px;
+$form-border-style: solid;
+$form-border-color: rgb(200, 200, 200);
+
+// Inputs, Textareas, Select, Option
+$form-input-height: 40px;
+$form-input-width: 100%;
+$form-input-max-width: 400px;
+$form-input-bg-color: #fff;
+$form-focus-bg-color: rgb(220, 220, 220);
+$form-focus-border-color: $form-border-color;
+$form-focus-font-color: $form-font-color;
+
+// Select Vendor Styling
+$form-allow-vendor-styling: true;
+
+// Fieldset & Legend Styling
+$form-fieldset-bare: false;
+
+// Buttons & Input Submits
+$form-button-height: 40px;
+$form-button-width: 100%;
+$form-button-max-width: 200px;
+$form-button-font-color: $form-font-color;
+$form-button-bg-color: $form-focus-bg-color;
+$form-button-hover-bg-color: $form-border-color;
+$form-button-hover-font-color: $form-font-color;
+
+// Layout
+$form-centered: false;
+$form-display: block;
+
+// Icons --
 
 $icon-roundness: 3.778px;
 $icon-border-color: #333;
 
-// Feedback
+// Feedback --
 
-$color-information: #439ccf;
-$color-error: #e72915;
-$color-warning: #d35400;
-$color-success: #74a730;
+$feedback-color-information: #439ccf;
+$feedback-color-error: #e72915;
+$feedback-color-warning: #d35400;
+$feedback-color-success: #74a730;

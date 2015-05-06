@@ -1,5 +1,5 @@
 /*
- * This styles are used only for the demo presentation 
+ * This styles are used only for the demo presentation
  * and should not be used on production.
  */
 
@@ -52,7 +52,7 @@ h4.description {
 	display: block;
 	padding: 0.218em;
 	margin-bottom: 1em;
-	background-color: lighten($color-link, 20%);
+	background-color: lighten($link-color, 20%);
 	font-weight: normal;
 }
 

@@ -11,7 +11,7 @@ http://modularscale.com/scale/?px1=16&px2=18&ra1=1.618&ra2=0
 
 /* Headings base style */
 h1, h2, h3, h4, h5, h6 {
-	margin-top: $margin-top;
+	margin-top: $text-margin-top;
 	margin-bottom: 0.382#{$base-unit};
   line-height: $headings-line-height; /* 1 */
   text-rendering: optimizeLegibility;
@@ -26,7 +26,7 @@ h5 { font-size: $font-size-h5; }
 
 /* Paragraph */
 p {
-	margin-top: $margin-top;
+	margin-top: $text-margin-top;
 
 	@if $indented-paragraphs {
 		margin-bottom: 0;
@@ -36,7 +36,7 @@ p {
 			margin-top: 0;
 		}
 	} @else {
-		margin-bottom: $margin-bottom;
+		margin-bottom: $text-margin-bottom;
 	}
 }
 
@@ -50,7 +50,7 @@ nav ol {
 
 ul, ol, dl {
   margin-top: 0;
-  margin-bottom: $margin-bottom;
+  margin-bottom: $text-margin-bottom;
   line-height: $line-height;
 }
 
@@ -75,14 +75,13 @@ pre {
 
 code {
 	color: $color-code;
-	font-family: $font-monospace-regular;
+	font-family: $font-family-monospace;
 	font-size: 0.8#{$base-unit};
-	background-color: lighten($color-muted, 20%);
 }
 
 kbd,
 samp {
-	background-color: #eee;
+	background-color: $body-bg;
 }
 
 /* Quotes */
@@ -90,7 +89,7 @@ blockquote {
 	padding-right: 5#{$base-unit};
 	padding-left: 1.25#{$base-unit};
   margin: 1#{$base-unit} 0;
-  border-left: .25#{$base-unit} solid lighten($color-base, 65%);
+  border-left: .25#{$base-unit} solid lighten($text-color, 65%);
 }
 
 blockquote p:last-child {

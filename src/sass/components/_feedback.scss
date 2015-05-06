@@ -1,19 +1,18 @@
 /*
- * Feedback 
+ * Feedback
  */
 
 [class^="alert-"] {
 	margin: 1em 0;
 	padding: 0.618em;
 	border: 1px solid;
-	border-bottom-width: 3px;
 
 	p {
 		margin: 0;
 	}
 }
 
-@mixin alert-generator($color) {
+@mixin alert($color) {
 	border-color: lighten($color, 30%);
 	background-color: lighten($color, 45%);
 
@@ -23,17 +22,17 @@
 }
 
 .alert-information {
-	@include alert-generator($color-information);
+	@include alert($feedback-color-information);
 }
 
 .alert-error {
-	@include alert-generator($color-error);
+	@include alert($feedback-color-error);
 }
 
 .alert-warning {
-	@include alert-generator($color-warning);
+	@include alert($feedback-color-warning);
 }
 
 .alert-success {
-	@include alert-generator($color-success);
+	@include alert($feedback-color-success);
 }
