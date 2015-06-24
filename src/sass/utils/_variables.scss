@@ -93,9 +93,8 @@ $form-allow-vendor-styling: true;
 $form-fieldset-bare: false;
 
 // Buttons & Input Submits
-$form-button-height: 40px;
+$form-button-height: 0;
 $form-button-width: 100%;
-$form-button-max-width: 200px;
 $form-button-font-color: $form-font-color;
 $form-button-bg-color: $form-focus-bg-color;
 $form-button-hover-bg-color: $form-border-color;

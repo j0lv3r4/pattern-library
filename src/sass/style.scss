@@ -16,7 +16,7 @@
 
 // Vendors
 
-@import "../bower_components/hyx.scss/hyx";
+@import "vendors/hyx";
 
 // Utils
 
@@ -26,23 +26,25 @@
 // Base
 
 @import "base/base";
+@import "base/forms";
 @import "base/typo";
 
 // Components
 
 @import "components/buttons";
 @import "components/feedback";
-@import "components/forms";
 @import "components/icons";
 @import "components/images";
 @import "components/navigation";
 
 // Layout
 
-@import "layout/header";
-@import "layout/main";
+@import "layout/container";
 @import "layout/footer";
 @import "layout/grid";
+@import "layout/header";
+@import "layout/main";
+@import "layout/sidebar";
 
 // Pages
 
