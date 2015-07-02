@@ -70,20 +70,18 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
-html {
-  font-family: "PT Sans", sans-serif;
-  font-size: 16px;
-  line-height: 1.618; }
-
 body {
   color: #333;
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.618;
   background-color: #fff;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
 
 /* No `:visited` state is required by default (browsers will use `a`) */
 a {
-  color: #619CCf;
+  color: blue;
   text-decoration: none;
   /* `:focus` is linked to `:hover` for basic accessibility */ }
   a:hover, a:focus {
@@ -92,7 +90,7 @@ a {
     color: inherit; }
 
 /* Based on FormHack v1.0.0 (formhack.io) */
-/* Global -- */
+/* Global */
 .form-base input,
 .form-base textarea,
 .form-base select,
@@ -105,13 +103,13 @@ a {
   vertical-align: top;
   display: block; }
 .form-base datalist {
-  font-family: 16px;
-  font-size: 16px; }
+  font-family: inherit;
+  font-size: inherit; }
 .form-base label {
   display: block;
   margin-bottom: 0; }
 
-/* Input & textarea -- */
+/* Input & textarea */
 /* Fields with standard width */
 .form-base {
   /* Fields with standard height */ }
@@ -154,7 +152,7 @@ a {
   .form-base input[list] {
     -webkit-appearance: none; }
 
-/* Other -- */
+/* Other */
 .form-base textarea {
   -webkit-appearance: none;
   overflow: auto; }
@@ -175,9 +173,9 @@ a {
   display: inline-block;
   vertical-align: middle; }
 
-/* Select -- */
+/* Select */
 .form-base {
-  /* Fieldset -- */ }
+  /* Fieldset */ }
   .form-base select {
     height: 40px; }
   .form-base select[multiple] {
@@ -192,10 +190,10 @@ a {
     border-radius: 5px;
     border: 1px solid #c8c8c8; }
   .form-base legend {
-    padding: 0 5px;
-    font-weight: 700; }
+    padding: 0;
+    font-weight: inherit; }
 
-/* States -- */
+/* States */
 .form-base input[disabled],
 .form-base textarea[disabled],
 .form-base select[disabled],
@@ -208,16 +206,16 @@ a {
 .form-base option:focus,
 .form-base button:focus {
   background-color: gainsboro;
-  border-color: #c8c8c8; }
+  border-color: inherit; }
 .form-base input[type="checkbox"]:focus,
 .form-base input[type="radio"]:focus {
-  outline: #c8c8c8 solid 2px; }
+  outline: inherit solid 2px; }
 
-/* Field Group Styles -- */
+/* Field Group Styles */
 .field-group {
   margin-bottom: 1em; }
 
-/* States & Feedback -- */
+/* States & Feedback */
 .form-base .label-inline,
 .form-base .checkbox-text {
   display: inline-block; }
@@ -229,24 +227,20 @@ a {
 .form-base .form-base-error {
   color: brown; }
 
-/*
- *  Typography
- */
-/* Modular Scale
-http://modularscale.com/scale/?px1=16&px2=18&ra1=1.618&ra2=0
-----------------------
-16px @ 1:1.618
-18px @ 1:1.618
-----------------------*/
-/* Headings base style */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 1em;
   margin-bottom: 0.382em;
   line-height: 1.125;
-  /* 1 */
   text-rendering: optimizeLegibility; }
 
-/* Headings specific font size */
+/*
+ * Headings specific font size 
+ */
 h1 {
   font-size: 2.225em; }
 
@@ -262,12 +256,21 @@ h4 {
 h5 {
   font-size: 1em; }
 
-/* Paragraph */
+/* 
+ * Paragraph 
+ */
 p {
   margin-top: 1em;
   margin-bottom: 1em; }
 
-/* Lists */
+small {
+  font-size: 90%; }
+
+/*
+ * Lists
+ *
+ * `ul` inside a `nav` element doesn't need the list style
+ */
 nav ul,
 nav ol {
   list-style: none;
@@ -275,44 +278,48 @@ nav ol {
   padding-left: 0; }
 
 ul, ol, dl {
-  margin-top: 0;
   margin-bottom: 1em;
+  margin-top: 0;
   line-height: 1.618; }
 
 li > ul,
 li > ol {
   margin-bottom: 0; }
 
-/* Better styled `<hr>` */
-hr {
-  position: relative;
-  margin: 1.5em 0;
-  border: 0;
-  border-top: 1px solid #eee;
-  border-bottom: 1px solid #fff; }
-
-/* Code */
+/*
+ * Code
+ */
 pre {
+  margin-top: 0;
+  margin-bottom: 0;
   white-space: pre-wrap; }
 
-code {
-  color: brown;
-  font-family: "Menlo", Inconsolata, Consolas, Monaco, monospace;
-  font-size: 0.8em; }
-
+code,
 kbd,
+pre,
 samp {
-  background-color: #fff; }
+  font-family: "Menlo", Inconsolata, Consolas, Monaco, monospace; }
 
-/* Quotes */
+/*
+ * Quotes
+ */
 blockquote {
-  padding-right: 5em;
   padding-left: 1.25em;
   margin: 1em 0;
-  border-left: 0.25em solid #d9d9d9; }
+  font-style: italic; }
 
 blockquote p:last-child {
   margin-bottom: 0; }
+
+/*
+ * Abbreviations
+ */
+abbr {
+  cursor: help;
+  font-variant: small-caps;
+  font-weight: bold;
+  text-transform: lowercase;
+  letter-spacing: 0.1em; }
 
 /*
  * Buttons 
@@ -329,7 +336,7 @@ a.button-large {
   display: inline-block;
   padding: 0.5em 1em;
   border: 0;
-  border-radius: 0.236em;
+  border-radius: 4px;
   text-decoration: none;
   font-family: inherit;
   font-family: inherit;
@@ -471,6 +478,12 @@ object {
 /*
  * Navigation 
  */
+.container {
+  margin: 0 auto;
+  padding-left: 1em;
+  padding-right: 1em;
+  max-width: 61.25em; }
+
 /*
  * Footer 
  */
@@ -487,8 +500,8 @@ object {
   @media only screen and (min-width: 48em) {
     .col-1-2 {
       float: left;
-      width: 49.5%;
-      margin-left: 1%; } }
+      width: 48%;
+      margin-left: 4%; } }
 
 .col-1-3 {
   float: left;
@@ -497,8 +510,8 @@ object {
   @media only screen and (min-width: 48em) {
     .col-1-3 {
       float: left;
-      width: 32.66667%;
-      margin-left: 1%; } }
+      width: 30.66667%;
+      margin-left: 4%; } }
 
 .col-1-4 {
   float: left;
@@ -507,8 +520,8 @@ object {
   @media only screen and (min-width: 48em) {
     .col-1-4 {
       float: left;
-      width: 24.25%;
-      margin-left: 1%; } }
+      width: 22%;
+      margin-left: 4%; } }
 
 #main {
   float: left;
@@ -517,7 +530,7 @@ object {
   @media only screen and (min-width: 48em) {
     #main {
       float: left;
-      width: 66.33333%;
+      width: 65.33333%;
       margin-left: 0; } }
 
 #sidebar {
@@ -527,8 +540,8 @@ object {
   @media only screen and (min-width: 48em) {
     #sidebar {
       float: left;
-      width: 32.66667%;
-      margin-left: 1%; } }
+      width: 30.66667%;
+      margin-left: 4%; } }
 
 /*
  * Header 
@@ -536,20 +549,14 @@ object {
 /* 
  * Main 
  */
-.container {
-  margin: 0 auto;
-  padding-left: 1em;
-  padding-right: 1em;
-  max-width: 50em; }
-
 /*
  * This styles are used only for the demo presentation
  * and should not be used on production.
  */
 .grid-notes {
   float: left;
-  width: 32.66667%;
-  margin-left: 1%; }
+  width: 30.66667%;
+  margin-left: 4%; }
 
 .demo-col {
   margin-top: 0.618em;
@@ -561,7 +568,7 @@ object {
 
 .grid-snippet {
   float: left;
-  width: 66.33333%;
+  width: 65.33333%;
   margin-left: 0; }
 
 .demo-masthead {
@@ -587,7 +594,7 @@ h4.description {
   display: block;
   padding: 0.218em;
   margin-bottom: 1em;
-  background-color: #afcde7;
+  background-color: #6666ff;
   font-weight: normal; }
 
 pre > code {

@@ -1,0 +1,6 @@
+.container {
+	margin: 0 auto;
+	padding-left: 1#{$wb-base-unit};
+	padding-right: 1#{$wb-base-unit};
+	max-width: $wb-container-width;
+}

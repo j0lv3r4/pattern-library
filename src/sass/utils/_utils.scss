@@ -12,13 +12,13 @@
 .align-left {
   display: inline;
   float: left;
-   margin-right: 1.5#{$base-unit};
+   margin-right: 1.5#{$wb-base-unit};
 }
 
 .align-right {
   display: inline;
   float: right;
-   margin-left: 1.5#{$base-unit};
+   margin-left: 1.5#{$wb-base-unit};
 }
 
 .align-center {

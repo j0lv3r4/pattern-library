@@ -12,27 +12,27 @@
 	}
 }
 
-@mixin alert($color) {
-	border-color: lighten($color, 30%);
-	background-color: lighten($color, 45%);
+@mixin alert($wb-color) {
+	border-color: lighten($wb-color, 30%);
+	background-color: lighten($wb-color, 45%);
 
 	strong {
-		color: $color;
+		color: $wb-color;
 	}
 }
 
 .alert-information {
-	@include alert($feedback-color-information);
+	@include alert($wb-feedback-color-information);
 }
 
 .alert-error {
-	@include alert($feedback-color-error);
+	@include alert($wb-feedback-color-error);
 }
 
 .alert-warning {
-	@include alert($feedback-color-warning);
+	@include alert($wb-feedback-color-warning);
 }
 
 .alert-success {
-	@include alert($feedback-color-success);
+	@include alert($wb-feedback-color-success);
 }

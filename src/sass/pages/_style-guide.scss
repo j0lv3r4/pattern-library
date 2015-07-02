@@ -41,7 +41,7 @@
 // Sections
 .section-demo {
 	margin-bottom: 1em;
-	padding: 1#{$base-unit};
+	padding: 1#{$wb-base-unit};
 
 	&:last-child {
 		margin-bottom: 0;
@@ -52,7 +52,7 @@ h4.description {
 	display: block;
 	padding: 0.218em;
 	margin-bottom: 1em;
-	background-color: lighten($link-color, 20%);
+	background-color: lighten($wb-link-color, 20%);
 	font-weight: normal;
 }
 
